@@ -55,7 +55,8 @@ The Chidori mobile appication serves as the primary interface for the user to ad
 Flutter app development  framework is used to make the “Chidori” mobile application. The app will provide the user an intuitive interface to add the contact details to be notified and also to customize the body of the message to be sent when the  gesture gets triggered.
 
 ## How to run the application 
-* Run `git clone https://github.com/<your-github-username>/<repo-name>.git && cd <repo-name>`on your terminal.
+* Run `git clone https://github.com/C-Harshul/Chidori-FrostHack.git`on your terminal.
+* Open the Chidori-App folder in a Flutter project.
 * Run `flutter pub get` in the project terminal and get the dependencies.
 * Use `flutter run debug` to run the app in your local emulator or debugging device.
 
@@ -81,13 +82,13 @@ We developed our own custom NodeJS API to handle requests from both hardware and
 <h3> API Endpoints </h3>
 {{url}} ----> <i>http://security-glove.herokuapp.com</i>
 
-- POST `{{url}}/contacts/addContact `  -- This  is used to add contacts to the Firebase Realtime Database <br />
-- GET `{{url}}/contacts` -- This  is used to get the contacts from the Firebase Realtime Database<br />
-- PATCH`{{url}}/contacts/<Contact Name>`  -- This is used to edit the contacts in Firebase Realtime Database <br />
-- GET `{{url}}/notify?title=<Message title>&lat=<lat>&long=<longitude>` -- This is used to notify the contacts stored in the database with the appropriate message
-- POST `{{url}}/message/addMessage` -- This endpoint is used to add custom messages to the database.
-- GET `{{url}}/message` -- This message is used to 
-- PATCH `{{url}}/message/edit/<Message title>` -- This end point is used to edit the body of the message
+- POST : `{{url}}/contacts/addContact `  -- This  is used to add contacts to the Firebase Realtime Database <br />
+- GET : `{{url}}/contacts` -- This  is used to get the contacts from the Firebase Realtime Database<br />
+- PATCH:`{{url}}/contacts/<Contact Name>`  -- This is used to edit the contacts in Firebase Realtime Database <br />
+- GET :`{{url}}/notify?title=<Message title>&lat=<lat>&long=<longitude>` -- This is used to notify the contacts stored in the database with the appropriate message
+- POST :`{{url}}/message/addMessage` -- This endpoint is used to add custom messages to the database.
+- GET :`{{url}}/message` -- This message is used to 
+- PATCH: `{{url}}/message/edit/<Message title>` -- This end point is used to edit the body of the message
 
 ### Use cases
 
