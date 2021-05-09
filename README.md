@@ -89,6 +89,18 @@ We developed our own custom NodeJS API to handle requests from both hardware and
 - GET `{{url}}/message` -- This message is used to 
 - PATCH `{{url}}/message/edit/<Message title>` -- This end point is used to edit the body of the message
 
+### Use cases
+
+- The primary use case is sending messages in case of medical emergencies when the user is not in the condition to type an SOS message.
+- It can also be used to send messages during emergencies such as kidnapping where the user can perform the gesture to notify family and the police.
+
+
+### Future Scope
+
+- The accuracy of the location can be improved if a dedicated GPS module can be used instead of using the Geolocation API which simply provides the vague location of the user.
+- There can be features that allow the user to calibrate their own gestures opening up infinite possibilities of gestures and messages.
+- The efficiency of the requests can be dramatically improved if shifted from Heroku to a more production-worthy platform like AWS.
+
 
 ## Contributors
 
