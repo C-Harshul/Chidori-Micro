@@ -82,13 +82,13 @@ We developed our own custom NodeJS API to handle requests from both hardware and
 <h3> API Endpoints </h3>
 {{url}} ----> <i>http://security-glove.herokuapp.com</i>
 
-- POST : `{{url}}/contacts/addContact `  -- This  is used to add contacts to the Firebase Realtime Database <br />
-- GET : `{{url}}/contacts` -- This  is used to get the contacts from the Firebase Realtime Database<br />
-- PATCH:`{{url}}/contacts/<Contact Name>`  -- This is used to edit the contacts in Firebase Realtime Database <br />
-- GET :`{{url}}/notify?title=<Message title>&lat=<lat>&long=<longitude>` -- This is used to notify the contacts stored in the database with the appropriate message
-- POST :`{{url}}/message/addMessage` -- This endpoint is used to add custom messages to the database.
-- GET :`{{url}}/message` -- This message is used to 
-- PATCH: `{{url}}/message/edit/<Message title>` -- This end point is used to edit the body of the message
+- POST : `{{url}}/contacts/addContact `  -- Add contacts to the Firebase Realtime Database <br />
+- GET : `{{url}}/contacts` -- Get the contacts from the Firebase Realtime Database<br />
+- PATCH:`{{url}}/contacts/<Contact Name>`  -- Edit the contacts in Firebase Realtime Database <br />
+- GET :`{{url}}/notify?title=<Message title>&lat=<lat>&long=<longitude>` -- Notify the contacts stored in the database with the appropriate message
+- POST :`{{url}}/message/addMessage` -- Add custom messages to the database.
+- GET :`{{url}}/message` -- Get the list of messages for the gestures 
+- PATCH: `{{url}}/message/edit/<Message title>` -- Edit the body of the message
 
 ### Use cases
 
