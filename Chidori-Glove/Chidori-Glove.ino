@@ -45,7 +45,7 @@ void loop()
 {
   if (WiFi.status() == WL_CONNECTED) { //Check WiFi connection status
     HTTPClient http;  //Declare an object of class HTTPClient
-    http.begin("http://security-glove.herokuapp.com/notify");  //Specify request destination
+    http.begin("http://security-glove.herokuapp.com/notify/?title=Message 2");  //Specify request destination
 
     mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
     data.X = map(ax, -17000, 17000, 0, 255 ); // X axis data
